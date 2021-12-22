@@ -1,0 +1,9 @@
+version: "1.0"
+services:
+  backend:
+    image: saurabhtalreja/score-service:latest
+    container_name: score-service-backend
+    build:
+      context: .
+    ports:
+      - 5000:8080
